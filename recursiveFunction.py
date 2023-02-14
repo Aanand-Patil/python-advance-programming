@@ -5,7 +5,7 @@
 #         return n * factorial(n-1)
 
 # factorial(5)
-
+#................................................................
 # using iterative function
 # def iterative_factorial(n):
 #     result = 1
@@ -15,6 +15,7 @@
 
 # iterative_factorial(1)
 
+#................................................................
 
 # fibonaci series recursive
 # def fib(n):
@@ -27,6 +28,8 @@
 # b=fib(5)    
 # print(b)
 
+#................................................................
+
 # fibonaci series iteratively
 # def fibi(n):
 #     old, new = 0, 1
@@ -37,6 +40,8 @@
 #     return new
 
 # fibi(4)
+
+#.................................................................
 
 # from timeit import Timer
 
@@ -52,6 +57,7 @@
 #     print(f"n={i:2d}, fib: {time1:8.6f}, fibi:  {time2:7.6f}, time1/time2: {time1/time2:10.2f}")
 
 # Think of a recursive version of the function f(n) = 3 * n, i.e. the multiples of 3
+#................................................................
 
 # def mult3(n):
 #     if n == 1:
@@ -61,7 +67,7 @@
 
 # for i in range(1,10):
 #         print(mult3(i))
-
+#................................................................
 # Write a recursive Python function that returns the sum of the first n integers. (Hint: The function will be similiar to the factorial function!)
 
 # def sum_n(n):
@@ -69,6 +75,7 @@
 #         return 0
 #     else:
 #         return n + sum_n(n-1)
+'''--------------------------------------------------------------------------------'''
 
 # Exercise 3
 # Write a function which implements the Pascal's triangle:
@@ -85,24 +92,26 @@
 
 # print(pascal(4))
 
+#.................................................................
+
 # prime numbers in recursively sorted
-from math import sqrt
+# from math import sqrt
 
-def primes(n):
-    if n == 0:
-        return []
-    elif n == 1:
-        return []
-    else:
-        p = primes(int(sqrt(n)))
-        no_p = [j for i in p for j in range(i*2, n + 1, i)]
-        p = [x for x in range(2, n + 1) if x not in no_p]
-        return p
-
-
-print(primes(100))
+# def primes(n):
+#     if n == 0:
+#         return []
+#     elif n == 1:
+#         return []
+#     else:
+#         p = primes(int(sqrt(n)))
+#         no_p = [j for i in p for j in range(i*2, n + 1, i)]
+#         p = [x for x in range(2, n + 1) if x not in no_p]
+#         return p
 
 
+# print(primes(100))
+
+#................................................................
 
 
 
